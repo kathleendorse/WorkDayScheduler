@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- fonts -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/locale/af.min.js -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container"> 
+
+
+      <div class="time-block">                         
+        <!-- 9:00am -->
+        <div class="row" id="row09">                     
+          <div class="hour col-md-2">                   
+            <p class="hourText">9 am</p>
+          </div>
+          <textarea class="text future col-md-8" id="text09"></textarea> 
+          <button class="saveBtn col-md-2" id="09">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 10:00am -->
+        <div class="row" id="row10">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">10 am</p>
+          </div>
+          <textarea class="text future col-md-8" id="text10"></textarea>  
+          <button class="saveBtn col-md-2" id="10">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 11:00am -->
+        <div class="row" id="row11">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">11 am</p>
+          </div>
+          <textarea class="text future col-md-8" id="text11"></textarea>  
+          <button class="saveBtn col-md-2" id="11">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 12:00pm -->
+        <div class="row" id="row12">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">12 pm</p>
+          </div>
+          <textarea class="text future col-md-8" id="text12"></textarea>  
+          <button class="saveBtn col-md-2" id="12">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 1:00pm -->
+        <div class="row" id="row01">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">1 pm</p>
+          </div>
+          <textarea class="text future col-md-8" id="text01"></textarea>  
+          <button class="saveBtn col-md-2" id="01">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 2:00pm -->
+        <div class="row" id="row02">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">2 pm</p>
+          </div>
+          <textarea class="text future col-md-8" id="text02"></textarea>  
+          <button class="saveBtn col-md-2" id="02">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 3:00pm -->
+        <div class="row" id="row03">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">3 pm</p>
+          </div>
+          <textarea class="text future col-md-8" id="text03"></textarea>  
+          <button class="saveBtn col-md-2" id="03">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 4:00pm -->
+        <div class="row" id="row04">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">4 pm</p>
+          </div>
+          <textarea class="text future col-md-8" id="text04"></textarea>  
+          <button class="saveBtn col-md-2" id="04">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+        <br>
+        <!-- 5:00pm -->
+        <div class="row" id="row05">                      
+          <div class="hour col-md-2">                    
+            <p class="hourText">5 pm</p>
+          </div>
+          <textarea class="text future col-md-8" id="text05"></textarea>  
+          <button class="saveBtn col-md-2" id="05">       
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+
+
+      </div>
+    
+      <!-- Timeblocks go here -->
+
+
+
+
+<!-- 9:00am -->
+      <!-- <div class = "row future time-block description">
+        <div class= "col-md-2 hour">
+          <p>9 am</p>
+        </div>
+        <div class="col-md-8">
+          <textarea id="notes09" class= "description"></textarea>
+        </div>
+        <div class="col-md-2">
+          <button class="saveBtn" id="btn09">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 10:00am -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>10 am (div)</p>
+        </div>
+        <div class = "col note-col description">
+          <textarea id="notes10"></textarea>
+        </div>
+
+          <button type="button" class="saveBtn" id="btn10" >
+            <i class= "far fa-save"></i>
+          </button>
+      </div> -->
+
+<!-- 11:00am -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>11 am (text area)</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes10" class="description"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn10">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 12:00pm -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>12 pm</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes12"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn12">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 01:00pm -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>1 pm</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes01"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn01">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 02:00pm -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>2 pm</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes02"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn02">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 03:00pm -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>3 pm</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes03"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn03">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 04:00pm -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>4 pm</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes04"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn04">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+<!-- 05:00pm -->
+      <!-- <div class = "time-block row future">
+        <div class = "col-md-2 hour">
+          <p class = timeTitle>5 pm</p>
+        </div>
+        <div class = "col note-col">
+          <textarea id="notes05"></textarea>
+        </div>
+        <div class = "col-md-2  ">
+          <button class="saveBtn" id="btn05">
+            <i class= "far fa-save"></i>
+          </button>
+        </div>
+      </div> -->
+
+
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
